@@ -7,9 +7,9 @@
     <meta property="og:title" content="LIRYN for the SCP WIKI">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lirynscp.github.io/liryn/">
-    <meta property="og:image" content="https://lirynscp.github.io/liryn/ly24.png">
-    <meta property="og:image:width" content="2000">
-    <meta property="og:image:height" content="2000">
+    <meta property="og:image" content="ly24-thumb.png">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
     <meta property="og:description" content="Taking Over. Art, fiction, & community. LOVE EVERYONE">
     <meta name="theme-color" content="#0a0a0a">
     <title>LIRYN for the SCP WIKI</title>
@@ -21,30 +21,67 @@
     @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
-    @import url('https://rsms.me/inter/inter.css');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+    html {
+        background-color: rgb(29, 29, 29);
+    }
 
     body {
-        max-width: 50rem;
+        max-width: 90rem;
+        min-height: 100vh;
         background-color: rgb(0, 0, 0);
-        background-image: url(METAF_LY24.png);
+        border: ridge 0.7rem rgb(60, 64, 77);
+        margin: 2rem auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .lirynscp-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: stretch;
+    }
+
+    .lirynscp-desc-container {
+        width: 50%;
+        background-image: url(https://lirynscp.github.io/liryn/METAF_LY24.png);
         background-repeat: no-repeat;
         background-size: 15rem;
         background-position: calc(50% + 9rem) 1rem;
-        margin: auto;
-        padding: 2rem 2rem 5rem;
-        overflow-x: hidden;
+        padding: 2rem 7rem 5rem;
+        box-sizing: border-box;
+    }
+
+    .lirynscp-projects-container {
+        width: 50%;
+        margin-top: 4rem;
+    }
+
+    a.lirynscp-project-link {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 100%;
+        height: 30vh;
+        border-bottom: none;
+        padding: 2rem;
+        box-sizing: border-box;
+        font-size: 5vw;
+        text-align: center;
+        user-select: none;
     }
 
     h1 {
         display: block;
         font-family: 'Anton';
         font-size: 3.5rem !important;
-        color: rgb(221, 221, 221);
+        color: rgb(156, 156, 181);
         text-align: center;
         line-height: 3.8rem;
     }
 
-    h1:not(:nth-of-type(1)) {
+    h1:not(:nth-child(1)) {
         margin-block: 8rem;
     }
 
@@ -54,14 +91,20 @@
     }
 
     p, a, span:not(h1 > span) {
-        font-family: 'Inter', sans-serif;
-        font-size: 1.3rem;
-        font-weight: 600;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 800;
     }
 
     p, span:not(h1 > span) {
         text-align: justify;
-        color: rgb(161, 161, 161);
+        color: rgb(128, 128, 141);
+        text-indent: 3rem;
+    }
+
+    .lirynscp-projects-container > p {
+        max-width: 30vw;
+        margin: auto;
     }
 
     a {
@@ -69,7 +112,7 @@
         border-bottom: dotted 0.2rem currentColor;
         padding-bottom: 0.2rem;
         font-size: 1.3rem;
-        color: rgb(210, 210, 210);
+        color: rgb(206, 162, 0);
         text-decoration: none;
         transition-property: transform;
         transition-duration: 0.2s;
@@ -105,33 +148,37 @@
 </style>
 <body>
 
-    <h1>LIRYN <span class="blackletter">for the</span><br>
-    SCP WIKI</h1>
+    <div class="lirynscp-wrapper">
 
-    <p>LIRYN (call me Lucy) is an amateur artist and writer currently writing for, and managing various projects on, the SCP Wiki. It has other ambitions that she is not willing to share with you at this time.</p>
-    
-    <br>
-    <br>
+        <div class="lirynscp-desc-container">
 
-    <span class="blackletter" style="font-size: 2rem; color: rgb(80, 80, 80);">Projects</span>
-    <p>WIP</p>
+            <h1>LIRYN <span class="blackletter">for the</span><br>
+            SCP WIKI</h1>
 
-    <br>
-    <br>
+            <p>LIRYN (call me Lucy) is an amateur artist and writer currently writing for, and managing various projects on, the SCP Wiki. It has other ambitions that she is not willing to share with you at this time.</p>
 
-    <span class="blackletter" style="font-size: 2rem; color: rgb(80, 80, 80);">Friends</span>
-    <p>LIRYN has worked frequently with crazed author and Affray Interactive agent PLACEHOLDER. Author entity BILLITH a.k.a. musician entity SLOWGRAMMING is another of its close associates. Collaborations with these entities, and others, are commonplace in her work.</p>
+            <br>
+            <br>
 
-    <br>
-    <br>
+            <div class="linkarray">
+                <a href="https://scp-wiki.wikidot.com/liryn">visit Author Page</a>
+            </div>
 
-    <span class="blackletter" style="font-size: 2rem; color: rgb(80, 80, 80);">Links</span>
+            <span class="fjalla">This page is under construction</span>
 
-    <div class="linkarray">
-        <a href="https://scp-wiki.wikidot.com/liryn">Liryn's SCP Wiki Author Page</a>
+        </div>
+
+        <div class="lirynscp-projects-container">
+            
+            <h1 style="font-size: 7vw !important; transform: scaleY(1.8);">PROJECTS</h1>
+
+            <a href="https://scp-wiki.wikidot.com/admonition" class="lirynscp-project-link" style="font-family: 'Poppins'; letter-spacing: -0.07em;">ADMONITION</a>
+
+            <p><em>ADMONITION:</em> A collection of serialized multimedia works managed by LIRYN and PLACEHOLDER. Features an array of talented authors and artists. One of the Wiki's most anticipated running series.</p>
+
+        </div>
+
     </div>
-
-    <span class="fjalla">This page is under construction</span>
 
 </body>
 </html>
