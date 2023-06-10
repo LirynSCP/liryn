@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="LIRYN for the SCP WIKI">
+    <meta property="og:title" content="LIRYN">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lirynscp.github.io/liryn/">
-    <meta property="og:image" content="ly24-thumb.png">
+    <meta property="og:image" content="ly24.png">
     <meta property="og:image:width" content="1920">
     <meta property="og:image:height" content="1080">
     <meta property="og:description" content="Taking Over. Art, fiction, & community. LOVE EVERYONE">
@@ -23,53 +23,14 @@
     @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-    html {
-        background-color: rgb(29, 29, 29);
-    }
-
     body {
-        max-width: 90rem;
-        min-height: 100vh;
-        background-color: rgb(0, 0, 0);
-        border: ridge 0.7rem rgb(60, 64, 77);
-        margin: 2rem auto;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-
-    .lirynscp-wrapper {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: stretch;
-    }
-
-    .lirynscp-desc-container {
-        width: 50%;
-        background-image: url(https://lirynscp.github.io/liryn/METAF_LY24.png);
-        background-repeat: no-repeat;
-        background-size: 15rem;
-        background-position: calc(50% + 9rem) 1rem;
-        padding: 2rem 7rem 5rem;
-        box-sizing: border-box;
-    }
-
-    .lirynscp-projects-container {
-        width: 50%;
-        margin-top: 4rem;
-    }
-
-    a.lirynscp-project-link {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        width: 100%;
-        height: 30vh;
-        border-bottom: none;
-        padding: 2rem;
-        box-sizing: border-box;
-        font-size: 5vw;
-        text-align: center;
-        user-select: none;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
     }
 
     h1 {
@@ -81,30 +42,19 @@
         line-height: 3.8rem;
     }
 
-    h1:not(:nth-child(1)) {
-        margin-block: 8rem;
-    }
-
     ::selection {
         color: rgb(0, 0, 0);
-        background-color: rgb(235, 200, 2);
+        background-color: rgb(235, 2, 165);
     }
 
     p, a, span:not(h1 > span) {
         font-family: 'Helvetica', sans-serif;
         font-size: 1.1rem;
-        font-weight: 800;
+        font-weight: 600;
     }
 
     p, span:not(h1 > span) {
-        text-align: justify;
         color: rgb(128, 128, 141);
-        text-indent: 3rem;
-    }
-
-    .lirynscp-projects-container > p {
-        max-width: 30vw;
-        margin: auto;
     }
 
     a {
@@ -112,14 +62,14 @@
         border-bottom: dotted 0.2rem currentColor;
         padding-bottom: 0.2rem;
         font-size: 1.3rem;
-        color: rgb(206, 162, 0);
+        color: rgb(0, 206, 31);
         text-decoration: none;
         transition-property: transform;
         transition-duration: 0.2s;
     }
 
     a:hover {
-        color: rgb(49, 58, 184);
+        color: rgb(184, 49, 162);
         transform: skewX(-15deg);
     }
 
@@ -129,56 +79,17 @@
 
     .fjalla {
         display: block;
-        margin-top: 13rem;
+        margin-top: 3rem;
         font-family: 'Fjalla One';
-        font-size: 4rem;
-        text-align: center;
-        color: rgb(182, 154, 0);
-        transform: skewX(15deg) skewY(2deg);
-    }
-
-    .linkarray {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        gap: 3rem;
-        margin-top: 2rem;
+        font-size: 2rem;
     }
 
 </style>
 <body>
 
-    <div class="lirynscp-wrapper">
+    <iframe src="https://www.youtube-nocookie.com/embed/-DmhtUV9C5I?modestbranding=1&rel=0&fs=0" width="560" height="315" title="Abandoner (Demo)" frameborder="0"></iframe>
 
-        <div class="lirynscp-desc-container">
-
-            <h1>LIRYN <span class="blackletter">for the</span><br>
-            SCP WIKI</h1>
-
-            <p>LIRYN (call me Lucy) is an amateur artist and writer currently writing for, and managing various projects on, the SCP Wiki. It has other ambitions that she is not willing to share with you at this time.</p>
-
-            <br>
-            <br>
-
-            <div class="linkarray">
-                <a href="https://scp-wiki.wikidot.com/liryn">visit Author Page</a>
-            </div>
-
-            <span class="fjalla">This page is under construction</span>
-
-        </div>
-
-        <div class="lirynscp-projects-container">
-            
-            <h1 style="font-size: 7vw !important; transform: scaleY(1.8);">PROJECTS</h1>
-
-            <a href="https://scp-wiki.wikidot.com/admonition" class="lirynscp-project-link" style="font-family: 'Poppins'; letter-spacing: -0.07em;">ADMONITION</a>
-
-            <p><em>ADMONITION:</em> A collection of serialized multimedia works managed by LIRYN and PLACEHOLDER. Features an array of talented authors and artists. One of the Wiki's most anticipated running series.</p>
-
-        </div>
-
-    </div>
+    <span class="blackletter" style="position: fixed; bottom: 2rem; font-size: 2rem; text-align: center;">LY24</span>
 
 </body>
 </html>
